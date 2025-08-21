@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>섹션과 메인 요소</title>
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+  </head>
+  <body>
+    <a href="/index.html">섹션과 메인 요소</a>
+    <hr />
+
+    <!-- 이렇게 쓰는게 좋아요 -->
+    <header>헤더</header>
+    <nav>네비게이션</nav>
+    <main>
+      <article>콘텐츠 섹션</article>
+      <article>콘텐츠 섹션</article>
+    </main>
+    <aside>부가 정보</aside>
+    <footer>바닥글</footer>
+    <hr />
+
+    <!-- 현재 개발자들이 많이 쓰는 버전 div만 있음 -->
+    <div>머리말</div>
+    <div>메뉴</div>
+    <div>
+      <div>콘텐츠 섹션</div>
+      <div>콘텐츠 섹션</div>
+    </div>
+    <div>부가 정보</div>
+    <div>바닥글</div>
+    <hr />
+
+    <!-- 현재 개발자들이 많이 쓰는 버전 div에 역할을 주기 role -->
+    <div role="banner">헤더</div>
+    <div role="navigation">메뉴</div>
+    <div role="main">
+      <div role="article">콘텐츠 섹션</div>
+      <div role="article">콘텐츠 섹션</div>
+    </div>
+    <div role="complementary">사이드 바</div>
+    <div role="contentinfo">푸터</div>
+  </body>
+</html>
