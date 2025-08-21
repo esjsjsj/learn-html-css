@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
+    <title>img vs figure 비교</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        gap: 50px;
+        margin: 50px;
+      }
+      .box {
+        text-align: center;
+        border: 1px solid #ccc;
+        padding: 20px;
+        border-radius: 10px;
+        width: 200px;
+      }
+      figure {
+        margin: 0;
+      }
+      figcaption {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/index.html">INDEX로 이동</a>
+
+    <!-- 그냥 <img> -->
+    <div class="box">
+      <h3>&lt;img&gt;만 사용</h3>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Example.svg" alt="예시 아이콘" width="100" />
+    </div>
+
+    <!-- <figure> + <figcaption> -->
+    <div class="box">
+      <h3>&lt;figure&gt; 사용</h3>
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Example.svg" alt="예시 아이콘" width="100" />
+        <figcaption>채팅 상담 아이콘</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>
