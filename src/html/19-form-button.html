@@ -5,18 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/public/favicon/likelion.ico" type="image/x-icon" />
     <link rel="icon" href="/public/favicon/likelion.svg" type="image/svg" />
-    <title>from(button) 요소</title>
+    <title>form(button) 요소</title>
   </head>
   <body>
-    <a href="/index.html">INDEX로 이동</a>
+    <a href="/index.html">Index로 이동</a>
     <h1>form(button) 요소</h1>
-
     <div>
       <button type="submit">전송</button>
       <button type="reset">초기화</button>
       <button type="button">클릭!</button>
     </div>
-
+    <hr />
     <!-- aria-labelledby (WAI-ARIA) -->
     <div>
       <span id="searchButton">검색하기</span>
@@ -34,7 +33,7 @@
     </div>
     <!-- aria-label (WAI-ARIA) -->
     <div>
-      <button type="button" aria-label="검색하기">
+      <button type="button" aria-label="검색">
         <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
             id="Union"
@@ -49,8 +48,8 @@
     <!-- SVG 이미지에 <title> 정보 추가 -->
     <div>
       <button type="button">
-        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <title>검색하기</title>
+        <svg aria-hidden="true" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- <title>Search</title> -->
           <path
             id="Union"
             fill-rule="evenodd"
@@ -59,6 +58,7 @@
             fill="#181818"
           />
         </svg>
+        설문
       </button>
     </div>
   </body>
