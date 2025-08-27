@@ -8,7 +8,6 @@
     <style>
       body {
         font-family: sans-serif;
-        display: flex;
         gap: 50px;
         margin: 50px;
       }
@@ -31,13 +30,14 @@
   </head>
   <body>
     <a href="/index.html">INDEX로 이동</a>
-
+    <br />
+    <h1>img와 figure 사용 비교 예시</h1>
     <!-- 그냥 <img> -->
     <div class="box">
       <h3>&lt;img&gt;만 사용</h3>
       <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Example.svg" alt="예시 아이콘" width="100" />
     </div>
-
+    <br />
     <!-- <figure> + <figcaption> -->
     <div class="box">
       <h3>&lt;figure&gt; 사용</h3>
@@ -45,6 +45,22 @@
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/84/Example.svg" alt="예시 아이콘" width="100" />
         <figcaption>채팅 상담 아이콘</figcaption>
       </figure>
+    </div>
+    <br />
+    <hr />
+    <h1>WAI-ARIA 예시</h1>
+    <!-- Role: 버튼, Property: aria-label, State: aria-pressed -->
+    <button role="button" aria-label="즐겨찾기 토글" aria-pressed="false">★ 즐겨찾기</button>
+
+    <!-- Role: 체크박스, Property: aria-labelledby, State: aria-checked -->
+    <div role="checkbox" aria-labelledby="newsletterLabel" aria-checked="true" tabindex="0">
+      <span id="newsletterLabel">뉴스레터 구독</span>
+    </div>
+
+    <!-- Role: 메뉴, Property: aria-orientation, State: aria-expanded -->
+    <div role="menu" aria-orientation="vertical">
+      <div role="menuitem" aria-expanded="false" tabindex="0">메뉴 항목 1</div>
+      <div role="menuitem" aria-expanded="true" tabindex="0">메뉴 항목 2</div>
     </div>
   </body>
 </html>
