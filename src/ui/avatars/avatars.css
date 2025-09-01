@@ -78,3 +78,7 @@ body {
     background-color: #dbdbdb;
   }
 }
+/* 아바타 레이아웃 */
+.avatar-list {
+  background-color: #ffc;
+}
