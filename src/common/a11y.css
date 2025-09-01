@@ -1,1 +1,13 @@
 /* 접근성 관련 CSS */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0); /* sr-only에만 가능한 속성. 구형 브라우저를 위해 사용 */
+  clip-path: inset(50); /* 새로 나온 속성. 여러 속성에서 사용가능 */
+  white-space: nowrap;
+  border-width: 0;
+}
