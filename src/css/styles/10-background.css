@@ -19,3 +19,22 @@ body {
     url('/src/assets/images/cloud.png') no-repeat 50% 30% / 200px 150px fixed,
     #ffc;
 }
+
+/* Linear gardient */
+
+.like {
+  background-color: pink;
+  background-image: linear-gradient(pink, skyblue);
+}
+
+.lion {
+  margin-top: 50px;
+  background-color: pink;
+  background-image: linear-gradient(to top, pink, skyblue);
+}
+
+.bootcamp {
+  margin-top: 50px;
+  background-color: pink;
+  background-image: linear-gradient(-45deg, pink 30%, skyblue 100%);
+}
