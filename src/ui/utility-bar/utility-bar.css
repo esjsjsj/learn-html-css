@@ -1,0 +1,43 @@
+body {
+  margin: 20px;
+}
+
+/* 유틸리티 바 수진 */
+/* .utility-bar {
+  background-color: yellow;
+  width: 884px;
+  height: 37px;
+}
+
+.utility-bar li {
+  display: inline-block;
+  vertical-align: middle;
+} */
+
+/* 유틸리티 바  */
+
+.utility-bar {
+  /* background-color: yellow; */
+  text-transform: uppercase;
+  display: flow-root;
+  font-size: 0;
+  text-align: right;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li {
+    /* background-color: pink; */
+    display: inline-block;
+    font-size: 1rem;
+  }
+
+  a,
+  [aria-hidden='true'] {
+    display: inherit;
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
