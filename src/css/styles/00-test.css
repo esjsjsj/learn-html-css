@@ -1,3 +1,47 @@
 body {
   margin: 20px;
 }
+
+.friend-img {
+  --size: 64px;
+  inline-size: var(--size);
+  block-size: var(--size);
+  position: relative;
+
+  img {
+    border-radius: 50%;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  span {
+    inline-size: 25%;
+    block-size: 25%;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
+}
+
+.status-online {
+  background-color: green;
+}
+
+.status-offline {
+  background-color: lightgray;
+}
+
+.friend-list {
+  display: flow-root;
+  padding: 10px 30px;
+
+  width: 400px;
+  border: 2px solid #dbdbdb;
+
+  li {
+    float: left;
+    margin: 10px;
+  }
+}

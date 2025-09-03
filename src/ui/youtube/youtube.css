@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.youtube-logo {
+  inline-size: 150px;
+}
+
+.youtube-header button {
+  background: #272727;
+  border: 1px solid #272727;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.youtube-header li {
+  float: left;
+  margin-right: 12px;
+  margin-bottom: 8px;
+}
