@@ -1,0 +1,102 @@
+body {
+  margin: 20px;
+}
+
+/* flex 컨테이너 관련 속성 */
+.like {
+  background-color: #ffc;
+  box-shadow: 0 0 0 1px red;
+  inline-size: 1000px;
+  block-size: 100px;
+  display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
+  flex-flow: row nowrap; /* << flex-direction과 flex-wrap 둘다 적용가능 */
+  /* 메인축 속성 */
+  justify-content: end;
+  align-items: center;
+
+  > div {
+    inline-size: 200px;
+    background-color: aqua;
+  }
+}
+
+.lion {
+  background: #ffc;
+  box-shadow: 0 0 0 1px red;
+  inline-size: 500px;
+  block-size: 100px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+  align-items: center;
+  align-content: end;
+
+  > div {
+    inline-size: 200px;
+    background: aqua;
+  }
+}
+
+/* flex 아이템 관련 속성 */
+.bootcamp {
+  background: pink;
+  box-shadow: 0 0 0 1px blue;
+  inline-size: 400px;
+  display: flex;
+  flex-flow: row nowrap;
+
+  > div {
+    inline-size: 125px;
+  }
+
+  .bootcamp-item2 {
+    background-color: silver;
+    flex-shrink: 2;
+  }
+
+  .bootcamp-item3 {
+    background: lime;
+    order: 1;
+    flex-shrink: 1;
+  }
+  .bootcamp-item4 {
+    background-color: salmon;
+    order: -1;
+    flex-shrink: 1;
+  }
+}
+
+.frontend {
+  background: pink;
+  box-shadow: 0 0 0 1px blue;
+  inline-size: 1000px;
+  display: flex;
+  flex-flow: row nowrap;
+
+  > div {
+    /* inline-size: 125px; */
+    flex-basis: 0;
+  }
+
+  .frontend-item1 {
+    background: skyblue;
+    flex-grow: 1;
+  }
+
+  .frontend-item2 {
+    background: silver;
+    flex-grow: 0;
+  }
+
+  .frontend-item3 {
+    background: lime;
+    flex-grow: 0;
+  }
+
+  .frontend-item4 {
+    background: salmon;
+    flex-grow: 0;
+  }
+}
