@@ -4,7 +4,9 @@
       fill: #000;
 
       @media (prefers-color-scheme: dark) {
-        fill: #fff;
+       g{ fill: #fff;
+
+       }
       }
     }
   </style>

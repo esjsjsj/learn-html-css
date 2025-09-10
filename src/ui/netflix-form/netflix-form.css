@@ -173,3 +173,58 @@ body {
     display: none;
   }
 }
+
+/* 콤보 박스 수진 ver*/
+/* .combo-box {
+  background: transparent;
+  border: 2px solid red;
+  padding: 10px;
+  position: relative;
+  inline-size: 120px;
+
+  select {
+    appearance: none;
+    border: none;
+    background: none;
+    position: absolute;
+    inline-size: 100%;
+    block-size: 100%;
+  }
+}
+   */
+
+/* 콤보 박스 */
+.combo-box {
+  --text-color: var(--gray-500);
+
+  display: inline-flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  position: relative;
+  color: var(--text-color);
+
+  svg {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  > svg:nth-of-type(1) {
+    inset-inline-start: 4px;
+  }
+
+  > svg:nth-of-type(2) {
+    inset-inline-end: 4px;
+  }
+
+  select {
+    inline-size: 100%;
+    padding: 0.25em 1.5em 0.25em 2em;
+    border: 1px sole currentColor;
+    border-radius: 4px;
+    color: inherit;
+    position: relative;
+    background: transparent;
+    z-index: 3;
+    appearance: none;
+  }
+}
