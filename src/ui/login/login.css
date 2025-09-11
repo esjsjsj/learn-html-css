@@ -211,9 +211,6 @@ body > a:nth-of-type(1) {
       align-items: center;
 
       @media (width<768px) {
-        .checkbox {
-        }
-
         .textlink-new,
         .switch {
           display: none;
